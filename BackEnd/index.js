@@ -12,9 +12,9 @@ let env = require("dotenv");
 env.config();
 
  mongoose.connect(process.env.DataBase).then(()=>{
-   console.log('database connected');
+   console.log('database connectedd');
  }).catch((err)=>{
-    console.log(err);
+    console.log("DB Error : ",err);
      
  })
  app.use('/api',signup)
